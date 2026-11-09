@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | Iya Jhamae</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">MY PORTFOLIO<span>.</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO MY CREATIVE SPACE</p>
+
+            <h1>Creating with <em>purpose,</em> designing with passion.</h1>
+
+            <div class="hero-intro">
+                <p class="hero-name">I'm Iya Jhamae P. Rementilla</p>
+                <p class="hero-role">IT Student & Creative Designer</p>
+            </div>
+
+            <p class="hero-description">
+                I enjoy transforming ideas into meaningful visual experiences
+                through design, multimedia, and storytelling. This is a space
+                where I share my creativity, interests, and work.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="primary-button">Explore My Work <span>↗</span></a>
+                <a href="#contact" class="text-button">Let's Connect</a>
+            </div>
+
+            <div class="hero-note">
+                <span class="note-line"></span>
+                <span>DESIGN · CREATIVITY · STORYTELLING</span>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="photo-frame">
+                <img
+                    src="{{ url_for('static', filename='images/IMG_1798 - Iya Jhamae Rementilla.jpeg') }}"
+                    alt="Iya Jhamae P. Rementilla">
+            </div>
+
+            <div class="photo-caption">
+                <span>THE CREATIVE MIND BEHIND THE WORK</span>
+                <span>01 / 06</span>
+            </div>
+
+            <div class="decorative-circle"></div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+        <div class="section-label">
+            <span>01</span>
+            <span>ABOUT ME</span>
+        </div>
+
+        <div class="about-layout">
+            <div class="about-heading">
+                <p class="eyebrow">A LITTLE INTRODUCTION</p>
+                <h2>Curious mind.<br><em>Creative heart.</em></h2>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    I'm Iya Jhamae P. Rementilla, an Information Technology
+                    student at Laguna State Polytechnic University,
+                    specializing in Animation and Multimedia Graphics.
+                </p>
+
+                <p>
+                    I have a growing interest in creative design and digital
+                    media. I enjoy exploring different ways to communicate
+                    ideas through visuals, thoughtful layouts, and storytelling.
+                </p>
+
+                <p>
+                    I'm always open to learning, experimenting, and discovering
+                    new ways to bring creative concepts to life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INTERESTS -->
+    <section class="section interests-section" id="interests">
+        <div class="section-label light-label">
+            <span>02</span>
+            <span>WHAT I LOVE TO CREATE</span>
+        </div>
+
+        <div class="section-heading">
+            <p class="eyebrow">MY CREATIVE INTERESTS</p>
+            <h2>Things I Enjoy <em>Working With</em></h2>
+            <p>
+                Different creative fields that allow me to explore ideas
+                and express my perspective.
+            </p>
+        </div>
+
+        <div class="interests-grid">
+            <article class="interest-card">
+                <span class="interest-number">01</span>
+                <div class="interest-icon">✳</div>
+                <h3>Creative Design</h3>
+                <p>Exploring layouts, colors, typography, and visual concepts.</p>
+            </article>
+
+            <article class="interest-card">
+                <span class="interest-number">02</span>
+                <div class="interest-icon">⌘</div>
+                <h3>UI/UX Design</h3>
+                <p>Creating thoughtful interfaces and user-friendly experiences.</p>
+            </article>
+
+            <article class="interest-card">
+                <span class="interest-number">03</span>
+                <div class="interest-icon">▶</div>
+                <h3>Video Editing</h3>
+                <p>Combining visuals, transitions, and storytelling into videos.</p>
+            </article>
+
+            <article class="interest-card">
+                <span class="interest-number">04</span>
+                <div class="interest-icon">◎</div>
+                <h3>Photography</h3>
+                <p>Capturing moments through composition, lighting, and perspective.</p>
+            </article>
+
+            <article class="interest-card">
+                <span class="interest-number">05</span>
+                <div class="interest-icon">✧</div>
+                <h3>Animation & Motion Graphics</h3>
+                <p>Bringing visual concepts to life through movement.</p>
+            </article>
+
+            <article class="interest-card">
+                <span class="interest-number">06</span>
+                <div class="interest-icon">❋</div>
+                <h3>Visual Storytelling</h3>
+                <p>Communicating ideas and narratives through creative media.</p>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+        <div class="section-label">
+            <span>03</span>
+            <span>SELECTED WORKS</span>
+        </div>
+
+        <div class="section-heading projects-heading">
+            <div>
+                <p class="eyebrow">A COLLECTION OF MY WORK</p>
+                <h2>Projects & <em>Explorations</em></h2>
+            </div>
+
+            <p>
+                A collection of ideas, concepts, and projects
+                I've worked on throughout my creative journey.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            {% for project in projects %}
+            <article class="project-card">
+                <div class="project-preview preview-{{ loop.index }}">
+                    <span class="preview-index">0{{ loop.index }}</span>
+                    <span class="preview-title">{{ project.title }}</span>
+                    <span class="preview-decoration">✳</span>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-info">
+                        <div>
+                            <p class="project-category">{{ project.category }}</p>
+                            <h3>{{ project.title }}</h3>
+                        </div>
+                        <span class="project-arrow">↗</span>
+                    </div>
+
+                    <p class="project-description">{{ project.description }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
+        <div class="section-label">
+            <span>04</span>
+            <span>MY BACKGROUND</span>
+        </div>
+
+        <div class="education-layout">
+            <div class="education-heading">
+                <p class="eyebrow">WHERE MY JOURNEY CONTINUES</p>
+                <h2>Learning today,<br><em>creating tomorrow.</em></h2>
+            </div>
+
+            <div class="education-card">
+                <span class="education-tag">CURRENT EDUCATION</span>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="school-name">Laguna State Polytechnic University</p>
+                <p>Siniloan Campus</p>
+                <div class="education-divider"></div>
+                <p class="specialization">Specialization</p>
+                <h4>Animation and Multimedia Graphics</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-decoration">✳</div>
+
+        <div class="section-label light-label">
+            <span>05</span>
+            <span>GET IN TOUCH</span>
+        </div>
+
+        <div class="contact-content">
+            <p class="eyebrow">HAVE SOMETHING IN MIND?</p>
+            <h2>Let's create<br><em>something meaningful.</em></h2>
+            <p>
+                Whether it's a creative collaboration, an opportunity,
+                or simply a conversation, I'd love to hear from you.
+            </p>
+
+            <a href="mailto:iyarementilla@gmail.com" class="contact-email">
+                iyarementilla@gmail.com <span>↗</span>
+            </a>
+        </div>
+
+        <form action="{{ url_for('send_message') }}" method="POST" class="contact-form">
+            <h3>Send me a message</h3>
+
+            <input type="text" name="name" placeholder="Your Name" maxlength="100" required>
+
+            <input type="email" name="email" placeholder="Your Email" maxlength="254" required>
+
+            <textarea name="message" placeholder="Write your message here..." rows="5" maxlength="3000" required></textarea>
+
+            <button type="submit" class="contact-button">
+                Send Message <span>↗</span>
+            </button>
+
+            {% with notifications = get_flashed_messages(with_categories=true) %}
+                {% if notifications %}
+                    {% for category, notification in notifications %}
+                        <p class="form-notification {{ category }}">{{ notification }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </form>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <a href="#home" class="footer-logo">MY PORTFOLIO<span>.</span></a>
+    <p>Designed and created by Iya Jhamae P. Rementilla</p>
+    <a href="#home" class="back-to-top">BACK TO TOP ↑</a>
+</footer>
+
+</body>
+</html>
